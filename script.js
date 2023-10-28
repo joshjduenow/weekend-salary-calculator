@@ -22,7 +22,7 @@ function handleSubmit(event) {
     <td>${id.value}</td>
     <td>${title.value}</td>
     <td>${annualsalary.value}</td>
-    <td><button onclick="deleteText(event)">❌</button></td>
+    <td><button onclick="deleteText(event)">␡</button></td>
      </tr>`
      first.value = ""
      last.value = ""
