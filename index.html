@@ -46,7 +46,7 @@
           id="salary"
           data-testid="annualSalaryInput"
           >
-        <button data-testid="submitButton">Submit</button>
+        <button data-testid="submitButton" onclick="handleSubmit(event)">Submit</button>
       </form>
     </section>
     <section>
@@ -72,8 +72,8 @@
     </section>
   </main>
 
-  <footer>
-    <p>Total Monthly: <span id="totalBudget">0</span></p>
+  <footer id = "totalMonthly">
+    <p>Total Monthly: <span id="totalBudget"></span></p>
   </footer>
 </body>
 
