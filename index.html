@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
-  <title>Salary Calculator</title>
+  <title>Dee-No's Salary Calculator</title>
 </head>
 
 <body>
   <header>
-    <h1>Salary Calculator</h1>
+    <h1>Dee-No Corp Salary Calculator</h1>
   </header>
   <main>
     
-      <h2>Add Employee</h2>
+      <h2 id="addEmp">Add Team Member</h2>
       <form onsubmit="handleSubmit(event)">
         <input 
         placeholder="First"
@@ -44,7 +44,7 @@
       </form>
     
     <section>
-      <h2>Employees</h2>
+      <h2 id="emp">Team Member</h2>
       <table>
         <thead>
           <tr>
@@ -63,7 +63,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="over-budget">
     <p>Total Monthly: $<span id="monthlySalary">0</span></p>
   </footer>
 </body>
