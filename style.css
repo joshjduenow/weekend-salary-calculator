@@ -12,7 +12,7 @@ h1 {
     color: black;
     text-decoration-line: underline;
     text-decoration-color: tan;
-    text-decoration-style: wavy;
+    text-decoration-style: unset;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 20%;
@@ -76,9 +76,11 @@ footer {
 }
 
   .over-budget {
-    width: 150px;
+    width: 100px;
+    size: 35px;
     text-align: right;
-    margin-left: 460px;
+    margin-top: 15px;
+    margin-left: 950px;
     padding-right: 0px;
     color: red;
     background-color: black;
