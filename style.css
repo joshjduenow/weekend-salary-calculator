@@ -76,12 +76,12 @@ footer {
 }
 
   .over-budget {
-    width: 100px;
+    width: 10%;
     size: 35px;
     text-align: right;
     margin-top: 15px;
-    margin-left: 950px;
-    padding-right: 0px;
+    margin-left: 900px;
+    padding: 0px;
     color: red;
     background-color: black;
   }
