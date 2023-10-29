@@ -13,42 +13,36 @@
     <h1>Salary Calculator</h1>
   </header>
   <main>
-    <section>
+    
       <h2>Add Employee</h2>
       <form onsubmit="handleSubmit(event)">
-        <input
-          placeholder="First"
-          type="text"
-          id="firstName"
-          data-testid="firstNameInput"
-          >
-        <input
-          placeholder="Last"
-          type="text"
-          id="lastName"
-          data-testid="lastNameInput"
-          >
-          <input
-          placeholder="ID"
-          type="text"
-          id="empId"
-          data-testid="idInput"
-          >
-          <input
-          placeholder="Title"
-          type="text"
-          id="empTitle"
-          data-testid="titleInput"
-          >
-          <input
-          placeholder="Annual Salary"
-          type="text"
-          id="salary"
-          data-testid="annualSalaryInput"
-          >
-        <button data-testid="submitButton" onclick="handleSubmit(event)">Submit</button>
+        <input 
+        placeholder="First"
+        type="text" 
+        id="firstName" 
+        data-testid="firstNameInput">
+        <input 
+        placeholder="Last" 
+        type="text" id="lastName" 
+        data-testid="lastNameInput">
+        <input 
+        placeholder="ID" 
+        type="text" id="empId" 
+        data-testid="idInput">
+        <input 
+        placeholder="Title" 
+        type="text" 
+        id="empTitle" 
+        data-testid="titleInput">
+        <input 
+        placeholder="Annual Salary" 
+        type="text" 
+        id="salary" 
+        data-testid="annualSalaryInput">
+        <button 
+        data-testid="submitButton">Submit</button>
       </form>
-    </section>
+    
     <section>
       <h2>Employees</h2>
       <table>
@@ -72,8 +66,8 @@
     </section>
   </main>
 
-  <footer id = "totalMonthly">
-    <p>Total Monthly: <span id="totalBudget"></span></p>
+  <footer>
+    <p>Total Monthly: $<span id="totalBudget"></span></p>
   </footer>
 </body>
 

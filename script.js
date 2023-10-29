@@ -4,43 +4,40 @@ let totalMonthly = 0;
 
 
 function handleSubmit(event) {
-    console.log(event);
-  
+    console.log("test");
+
     event.preventDefault();
-    let first = document.getElementById('firstName');
-    let last = document.getElementById('lastName');
-    let id = document.getElementById('empId');
-    let title = document.getElementById('empTitle');
-    let annualSalary = document.getElementById('salary');
-    let budget = document.getElementById('totalBudget');
-  
-    console.log(first, last, id, title, annualSalary, budget);
-  
-    let tables = document.getElementById('tableBody');
-    tables.innerHTML += 
-    `<tr>
-    <td>${first.value}</td>
-    <td>${last.value}</td>
-    <td>${id.value}</td>
-    <td>${title.value}</td>
-    <td>${annualSalary.value}</td>
+    let first = document.getElementById('firstName').value;
+    let last = document.getElementById('lastName').value;
+    let id = document.getElementById('empId').value;
+    let title = document.getElementById('empTitle').value;
+    let annualSalary = document.getElementById('salary').value;
+    let budget = document.getElementById('totalBudget').value;
+    
+
+    document.getElementById('tableBody').innerHTML +=
+     `<tr>
+    <td>${first}</td>
+    <td>${last}</td>
+    <td>${id}</td>
+    <td>${title}</td>
+    <td>${annualSalary}</td>
     <td><button onclick="deleteText(event)">❌</button></td>
      </tr>`
-     first.value = ""
-     last.value = ""
-     id.value = ""
-     title.value = ""
-     annualSalary.value = ""
+    // first.value = ""
+    // last.value = ""
+    // id.value = ""
+    // title.value = ""
+    // annualSalary.value = ""
 
-     totalMonthly += 0;
-     console.log(totalMonthly);
-     document.getElementById('totalBudget').textContent = totalMonthly
+    totalMonthly += Number(annualSalary);
+    document.getElementById('totalBudget').textContent = totalMonthly
 
-    
-  }
-  function deleteText(event) {
+
+ }
+function deleteText(event) {
     event.target.parentElement.parentElement.remove();
-  }
+}
 
 //   function addTotalMonthly() {
 //     let budget = document.getElementById('totalBudget');
@@ -48,14 +45,14 @@ function handleSubmit(event) {
 
 //     budget.innerHTML +=
 
-//     totalMonthly++;
+//     totalMonthly+=annualSalary;
 //   }
-    
-    
 
 
 
 
-  function onReady() {
+
+
+function onReady() {
     console.log('Javascript is working!');
-  }
+}
