@@ -7,7 +7,7 @@ header {
 
 h1 {
     width: 500px;
-    margin-left: 250px;
+    margin-left: 450px;
     text-align: center;
     color: black;
     text-decoration-line: underline;
@@ -35,21 +35,25 @@ h1 {
 input {
     color: black;
     background-color: tan;
+    width: 125px;
+    height: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
-.addemp {
-    text-align: right;
-}
-
+  }
+  #emp {
+    margin-top: 100px;
+    text-align: center;
+  }
 
 table {
     width: 60%;
     text-align: center;
+    margin-left: 225px;
   }
   table, th, td {
     border: 5px solid black;
@@ -64,6 +68,18 @@ table {
     background: tan;
     color: black;
   }
+
+footer {
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 400px;
+}
+
   .over-budget {
+    width: 150px;
+    text-align: right;
+    margin-left: 460px;
+    padding-right: 0px;
     color: red;
+    background-color: black;
   }

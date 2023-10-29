@@ -36,7 +36,7 @@ function handleSubmit(event) {
     console.log(totalMonthly);
     document.getElementById('monthlySalary');
     if (totalMonthly > 20000) {
-        monthlySalary.innerHTML = `< class='over-budget'> ${totalMonthly}</p>`
+        monthlySalary.innerHTML = `<footer class='over-budget'> ${totalMonthly}</p>`
     }
     else { monthlySalary.innerHTML = `<p>${totalMonthly}</p>` };
 
