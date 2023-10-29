@@ -15,3 +15,6 @@ table {
     background: #7a7a7a;
     color: #fcfcfc;
   }
+  .over-budget {
+    color: red;
+  }
