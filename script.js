@@ -23,7 +23,7 @@ function handleSubmit(event) {
     <td>${id}</td>
     <td>${title}</td>
     <td>${annualSalary}</td>
-    <td><button onclick="deleteText(event)">❌</button></td>
+    <td><button onclick="deleteText(event)">␡</button></td>
      </tr>`
     firstName.value = ""
     lastName.value = ""
@@ -32,11 +32,11 @@ function handleSubmit(event) {
     salary.value = ""
 
     totalMonthly += Number(annualSalary);
-    document.getElementById('totalBudget')
+    document.getElementById('monthlySalary');
     if (totalMonthly > 20000) {
-        totalBudget.innerHTML = `<p class='over-budget'> ${totalMonthly}</p>`
+        monthlySalary.innerHTML = `<footer class='over-budget'> ${totalMonthly}</p>`
     }
-    else { totalBudget.innerHTML = `<p>${totalMonthly}</p>` };
+    else { monthlySalary.innerHTML = `<p>${totalMonthly}</p>` };
 
 
 
