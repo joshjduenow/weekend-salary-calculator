@@ -31,8 +31,10 @@ function handleSubmit(event) {
     // annualSalary.value = ""
 
     totalMonthly += Number(annualSalary);
-    document.getElementById('totalBudget').textContent = totalMonthly
-
+    document.getElementById('totalBudget').textContent = Number(totalMonthly);
+    if(totalMonthly > 20000){
+        totalBudget.innerHTML = `<p class='inRed'> ${totalMonthly}</p>`}
+         else {totalBudget.innerHTML = `<p>${totalMonthly}</p>`};
 
  }
 function deleteText(event) {
